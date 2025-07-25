@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8">
+  <!-- Viewport for Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the Webpage -->
+  <title>My Website Title</title>
+  <!-- Description for SEO -->
+  <meta name="description" content="This is a sample website description used for SEO purposes.">
+  <!-- Keywords for SEO -->
+  <meta name="keywords" content="HTML, CSS, JavaScript, Web Design">
+  <!-- Author Info -->
+  <meta name="author" content=>
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .footer {
+  background: #413C9C;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  padding: 40px 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-form,
+.footer-center,
+.footer-info {
+  /* flex: 1 1 300px; */
+}
+
+.footer-form h3 {
+  margin-bottom: 15px;
+}
+
+.footer-form form input,
+.footer-form form select,
+.footer-form form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.footer-form .form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-form button {
+  background: #fff;
+  color: #413C9C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+.footer-info h4 {
+  margin: 10px 0 5px;
+}
+
+.footer-bottom {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left: Contact Form -->
+    <div class="footer-form">
+      <h3>Connect With Us</h3>
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="First Name*" required>
+          <input type="text" placeholder="Last Name*" required>
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email Address*" required>
+          <select required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Ghana">Ghana</option>
+          </select>
+        </div>
+        <input type="tel" placeholder="Phone Number">
+        <textarea maxlength="180" placeholder="Enter Your Message*"></textarea>
+        <div class="form-footer">
+          <button type="submit">Read More</button>
+          <span class="char-count">0 / 180</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Center: Logo & Contact -->
+    <div class="footer-center">
+      <img src="/Images/logo.png" alt="Logo" class="footer-logo">
+      <h3>Hyperlink Network System</h3>
+      <p><a href="mailto:info@hnsggh.com">📧 info@hnsggh.com</a></p>
+      <p>Social Media</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Right: Office Info -->
+    <div class="footer-info">
+      <div>
+        <h4>📍 USA</h4>
+        <p>Hyperlink Network Systems<br>10432 Balls Ford Rd Suite 300<br>Manassas VA, 20109</p>
+        <p>📞 Office Number: +1 (571)-4064-203</p>
+      </div>
+      <div>
+        <h4>📍 Ghana</h4>
+        <p>Ghana Science and Museum Block B Barnes Road<br>Adabraka, Accra Ghana West Africa</p>
+        <p>📞 Office Number: (+233) 0302-230235</p>
+        <p>📠 Office Fax: (+233) 0302-230261</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © 2023. Hyperlink Network Systems</p>
+  </div>
+</footer>
+
+</body>
+</html>
