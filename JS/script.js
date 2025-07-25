@@ -1,6 +1,6 @@
 $(document).ready(function () {
  
-  $('#header-placeholder').load('/header.html', function () {
+  $('#header-universal').load('/header.html', function () {
     
     const currentPage = window.location.pathname.split("/").pop();
     $(".nav-links a").each(function () {
@@ -36,4 +36,8 @@ $(document).ready(function () {
     });
 
   }); // end of .load()
+});
+
+$(function () {
+  $("#footer-universal").load("/footer.html");
 });
